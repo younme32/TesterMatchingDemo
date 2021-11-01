@@ -7,5 +7,5 @@ INNER JOIN tester_devices
  ON devices.ID = tester_devices.DeviceID
  INNER JOIN bugs
  ON tester.ID = bugs.TesterID
- WHERE tester.country = "US" AND (devices.Descr = "iPhone 4" OR devices.Descr = "iPhone 5")
+ WHERE bugs.DeviceID = devices.ID AND tester.ID AND tester.country = "US" AND (devices.Descr = "iPhone 4" OR devices.Descr = "iPhone 5")
  GROUP BY DeviceID, testerID;
