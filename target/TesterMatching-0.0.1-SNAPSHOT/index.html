@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Import jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Import css files -->
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<!-- Import js files -->
+<script src="js/Ajax.js"></script>
+<script src="js/GetCountries.js"></script>
+<script src="js/GetDevices.js"></script>
+<script src="js/MatchTesters.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+<body>
+
+<main id="main">
+	<fieldset id="countrySelectionGroup" class="selectionGroup">
+		<label class="selectionLabel">Select Countries: </label>
+		<select class="selectionSelect" id="CountrySelect"></select>
+		<div id="SelectedCountryContainer" class="selectionGroupContainer">
+		
+		</div>
+	</fieldset>
+	<fieldset id="deviceSelectionGroup" class="selectionGroup">
+		<label class="selectionLabel">Select Devices: </label>
+		<select class ="selectionSelet" id="DeviceSelect"></select>
+		<div id="SelectedDeviceContainer" class="selectionGroupContainer">
+		
+		</div>
+	</fieldset>
+	<div class="resultsTable">
+		<div class="headerRow">
+			<div class="cell">
+				<label>First Name</label>
+			</div>
+			<div class="cell">
+				<label>Last Name</label>
+			</div>
+			<div class="cell">
+				<label>Bugs Fixed</label>
+			</div>
+		</div>
+	</div>
+</main>
+
+</body>
+
+</html>

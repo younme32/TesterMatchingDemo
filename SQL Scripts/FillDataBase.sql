@@ -1,0 +1,29 @@
+USE testerDB;
+SHOW VARIABLES LIKE "secure_file_priv";
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/testers.csv'
+INTO TABLE tester
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/bugs.csv'
+INTO TABLE bugs
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/devices.csv'
+INTO TABLE devices
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/tester_device.csv'
+INTO TABLE tester_devices
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
